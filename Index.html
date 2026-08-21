@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#eceef0",
+                      "primary-fixed-dim": "#b1c7f3",
+                      "outline": "#74777f",
+                      "on-error": "#ffffff",
+                      "tertiary-container": "#002c02",
+                      "on-primary-fixed": "#011b3e",
+                      "primary-container": "#0b2447",
+                      "on-tertiary-fixed": "#002201",
+                      "error-container": "#ffdad6",
+                      "surface-variant": "#e0e3e5",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#a6c0ff",
+                      "tertiary-fixed-dim": "#a1d494",
+                      "on-tertiary-fixed-variant": "#23501e",
+                      "surface": "#f7f9fb",
+                      "surface-dim": "#d8dadc",
+                      "secondary": "#435d95",
+                      "on-tertiary-container": "#67985d",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-surface": "#191c1e",
+                      "on-secondary-fixed": "#001a43",
+                      "on-primary-fixed-variant": "#32476c",
+                      "surface-container-highest": "#e0e3e5",
+                      "surface-tint": "#4a5f85",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#f7f9fb",
+                      "on-secondary-container": "#324e85",
+                      "on-primary": "#ffffff",
+                      "background": "#f7f9fb",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed": "#d6e3ff",
+                      "surface-container-high": "#e6e8ea",
+                      "tertiary-fixed": "#bcf0ae",
+                      "on-surface-variant": "#44474e",
+                      "inverse-primary": "#b1c7f3",
+                      "tertiary": "#001401",
+                      "inverse-surface": "#2d3133",
+                      "primary": "#000f27",
+                      "error": "#ba1a1a",
+                      "outline-variant": "#c4c6cf",
+                      "on-secondary-fixed-variant": "#29457c",
+                      "on-background": "#191c1e",
+                      "surface-container-low": "#f2f4f6",
+                      "on-primary-container": "#778cb5",
+                      "secondary-fixed-dim": "#afc6ff",
+                      "secondary-fixed": "#d9e2ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "container-padding-mobile": "16px",
+                      "gutter": "16px",
+                      "stack-sm": "4px",
+                      "container-padding-desktop": "32px",
+                      "stack-lg": "24px",
+                      "stack-md": "12px"
+              },
+              "fontFamily": {
+                      "headline-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "data-mono": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "26px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "data-mono": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface flex flex-col min-h-screen">
+<!-- TopAppBar Component -->
+<header class="w-full top-0 sticky bg-surface dark:bg-surface-dim shadow-sm z-40">
+<div class="flex justify-between items-center px-container-padding-mobile py-base w-full">
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded-full object-cover border border-outline-variant" data-alt="A small circular avatar placeholder image showing a silhouette of a professional user in a minimalist corporate style, suitable for a dark mode interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE87b5jZeLcFaXuNcNQLxkNIqPj-Un68AUYkebiDk7dHQsksa6XdOhX5c5cYafcpr6vRe7avjJCRAUQ8xJBc2vHL66GxJrWiAUctiWCZjFODM53qV4DV9JYxMRs-MLeGEnwZvRwyXbkFaWPz0chPNhCyIIIkqb4I0KclvtJxzkYo8xo_2zJ8XwtR1B_XncRJWdllRgjP_3nOTS_AQq6aUFLD9ZpCf2IE-6tSX5hN9BVhAvI7iqEi7h"/>
+</div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim">PartnerFormation</h1>
+<button class="text-on-surface-variant hover:bg-surface-variant/50 transition-colors duration-200 ease-in-out p-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow px-container-padding-mobile py-stack-lg pb-24 space-y-stack-lg">
+<section class="space-y-stack-sm">
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Settings</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage your account preferences and formation details.</p>
+</section>
+<!-- Settings Options List -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden divide-y divide-outline-variant">
+<a class="flex items-center p-4 hover:bg-surface-variant/20 transition-colors group" href="#">
+<div class="bg-primary-container/10 p-2 rounded-lg text-primary mr-4">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">group</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface">Partner Management</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Edit roles and permissions</p>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+<a class="flex items-center p-4 hover:bg-surface-variant/20 transition-colors group" href="#">
+<div class="bg-primary-container/10 p-2 rounded-lg text-primary mr-4">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">folder_open</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface">Document Vault</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Access formation papers</p>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+<a class="flex items-center p-4 hover:bg-surface-variant/20 transition-colors group" href="#">
+<div class="bg-primary-container/10 p-2 rounded-lg text-primary mr-4">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">notifications_active</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface">Notification Preferences</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage alerts and emails</p>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+<a class="flex items-center p-4 hover:bg-surface-variant/20 transition-colors group" href="#">
+<div class="bg-primary-container/10 p-2 rounded-lg text-primary mr-4">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">security</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface">Security &amp; 2FA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Update password and security</p>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+</section>
+<!-- Logout Button -->
+<section class="pt-stack-md">
+<button class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-error text-error bg-transparent hover:bg-error/5 transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined">logout</span>
+                Logout
+            </button>
+</section>
+</main>
+<!-- BottomNavBar Component -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface dark:bg-surface-dim shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1),0_-2px_4px_-1px_rgba(0,0,0,0.06)] md:hidden">
+<div class="flex justify-around items-center h-16 px-base pb-safe w-full">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim active:scale-95 transition-transform duration-150 w-16" href="#">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span class="font-label-sm text-label-sm text-[10px]">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim active:scale-95 transition-transform duration-150 w-16" href="#">
+<span class="material-symbols-outlined mb-1">business_center</span>
+<span class="font-label-sm text-label-sm text-[10px]">Formation</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim active:scale-95 transition-transform duration-150 w-16" href="#">
+<span class="material-symbols-outlined mb-1">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm text-[10px]">Finance</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-on-secondary-container text-on-secondary-container dark:text-secondary-container rounded-full px-4 py-1 hover:text-primary dark:hover:text-primary-fixed-dim active:scale-95 transition-transform duration-150 w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-label-sm text-label-sm text-[10px]">Settings</span>
+</a>
+</div>
+</nav>
+</body></html>
