@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elepta Holdings — Building What's Next</title>
+<meta name="description" content="Elepta Holdings is a growing group of businesses spanning company formation, Germany-focused consulting, education and future ventures.">
+<meta name="theme-color" content="#0c1f1c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elepta Holdings — Building What's Next">
+<meta property="og:description" content="One group. Different industries. A shared ambition to build what's next.">
+<meta property="og:image" content="preview.jpg">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --ink:#0c1f1c;--forest:#12362f;--mint:#b9dfca;--cream:#f6f1e5;--gold:#c29a3b;
+ --sun:#f3c85b;--orange:#e66a3b;--coral:#d9534f;--blue:#75b7c9;--white:#fffdf8;
+ --line:rgba(12,31,28,.14);--muted:#64706b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Archivo,sans-serif;color:var(--ink);background:var(--cream);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+::selection{background:var(--sun);color:var(--ink)}
+.noise{position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E")}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+nav{position:fixed;z-index:90;top:16px;left:0;width:100%;transition:.3s}
+.navbar{height:68px;padding:0 12px 0 20px;border:1px solid transparent;border-radius:22px;display:flex;align-items:center;justify-content:space-between;transition:.3s}
+nav.scrolled .navbar{background:rgba(246,241,229,.88);backdrop-filter:blur(18px);border-color:var(--line);box-shadow:0 12px 40px rgba(12,31,28,.08)}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.5px}
+.mark{width:38px;height:38px;border-radius:13px;background:var(--ink);color:var(--sun);display:grid;place-items:center;font-family:Fraunces;font-size:22px;transform:rotate(-4deg)}
+.brand small{font-family:"Spline Sans Mono";font-size:9px;color:var(--gold);letter-spacing:1.4px;display:block;margin-top:1px}
+.links{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:600}
+.links a:hover{color:var(--orange)}
+.navcta{background:var(--ink);color:white!important;padding:13px 18px;border-radius:14px}
+.menu{display:none;border:0;background:var(--ink);color:white;width:43px;height:43px;border-radius:14px;font-size:20px}
+.hero{min-height:100vh;position:relative;padding:140px 0 75px;display:flex;align-items:center;overflow:hidden}
+.blob{position:absolute;border-radius:999px;filter:blur(1px);animation:float 8s ease-in-out infinite}
+.b1{width:480px;height:480px;background:var(--sun);right:-170px;top:-130px;opacity:.65}
+.b2{width:270px;height:270px;background:var(--mint);left:-120px;bottom:20px;animation-delay:-3s}
+.b3{width:170px;height:170px;background:var(--orange);right:12%;bottom:-70px;opacity:.65;animation-delay:-5s}
+@keyframes float{50%{transform:translateY(25px) translateX(-12px) rotate(8deg)}}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center;position:relative;z-index:2}
+.kicker{font-family:"Spline Sans Mono";font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;display:flex;align-items:center;gap:10px;margin-bottom:22px}
+.kicker i{display:block;width:9px;height:9px;background:var(--orange);border-radius:50%;box-shadow:0 0 0 6px rgba(230,106,59,.13)}
+h1{font-family:Fraunces,serif;font-size:clamp(60px,8vw,112px);line-height:.88;letter-spacing:-5px;font-weight:600}
+h1 em{font-weight:500;color:var(--orange)}
+.hero p{font-size:18px;line-height:1.7;max-width:620px;margin:30px 0;color:#485651}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:16px 22px;border-radius:15px;font-size:14px;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:.25s}
+.btn.dark{background:var(--ink);color:white}.btn.dark:hover{transform:translateY(-3px);background:var(--forest)}
+.btn.light{background:rgba(255,255,255,.48);border:1px solid var(--line)}.btn.light:hover{background:white;transform:translateY(-3px)}
+.hero-art{position:relative;height:500px}
+.tile{position:absolute;border-radius:26px;box-shadow:0 20px 60px rgba(12,31,28,.13);transition:.3s;overflow:hidden}
+.tile:hover{transform:translateY(-8px) rotate(0)!important}
+.tile .top{font-family:"Spline Sans Mono";font-size:9px;letter-spacing:1.5px;text-transform:uppercase}
+.tile h3{font-family:Fraunces;font-size:30px;line-height:1.05;margin-top:14px}
+.t1{width:260px;height:285px;background:var(--ink);color:white;left:10px;top:15px;padding:27px;transform:rotate(-7deg)}
+.t1 .top{color:var(--sun)}.t1 .big{font-size:94px;font-family:Fraunces;color:var(--sun);position:absolute;bottom:-18px;right:15px}
+.t2{width:240px;height:230px;background:var(--blue);right:5px;top:55px;padding:27px;transform:rotate(7deg)}
+.t3{width:270px;height:190px;background:var(--sun);left:105px;bottom:5px;padding:27px;transform:rotate(3deg)}
+.t3 span{font-size:44px;position:absolute;right:22px;bottom:17px}
+.marquee{background:var(--ink);color:white;overflow:hidden;padding:15px 0;transform:rotate(-1deg);width:102%;margin-left:-1%;position:relative;z-index:3}
+.track{display:flex;width:max-content;animation:scroll 25s linear infinite}
+.track span{font-family:"Spline Sans Mono";font-size:11px;letter-spacing:2px;padding-right:45px;white-space:nowrap}.track b{color:var(--sun);margin-right:45px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.section{padding:120px 0}
+.eyebrow{font-family:"Spline Sans Mono";font-size:10px;letter-spacing:2px;color:var(--orange);text-transform:uppercase;margin-bottom:18px}
+.title{font-family:Fraunces;font-size:clamp(44px,6vw,78px);line-height:1;letter-spacing:-3px;font-weight:600}
+.lead{font-size:17px;line-height:1.75;color:var(--muted);max-width:650px;margin-top:22px}
+.portfolio{background:var(--white)}
+.cards{margin-top:60px;display:grid;gap:18px}
+.card{min-height:290px;border-radius:28px;padding:34px;display:grid;grid-template-columns:1fr 1.15fr .65fr;align-items:center;gap:30px;position:relative;overflow:hidden;transition:.35s}
+.card:hover{transform:scale(1.012);box-shadow:0 24px 60px rgba(12,31,28,.11)}
+.card:nth-child(1){background:var(--ink);color:white}
+.card:nth-child(2){background:var(--sun)}
+.card:nth-child(3){background:var(--mint)}
+.card-no{font-family:"Spline Sans Mono";font-size:10px;letter-spacing:2px;opacity:.65;position:absolute;left:34px;top:28px}
+.card h3{font-family:Fraunces;font-size:clamp(35px,4vw,52px);line-height:1}
+.card p{line-height:1.7;font-size:14px;max-width:470px;opacity:.76}
+.card-actions{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+.pill{padding:14px 16px;border-radius:14px;text-align:center;font-size:12px;font-weight:700;border:1px solid rgba(12,31,28,.18);transition:.2s}
+.card:nth-child(1) .pill{border-color:rgba(255,255,255,.2)}
+.pill:hover{background:var(--orange);color:white;border-color:var(--orange);transform:translateX(4px)}
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:start}
+.statement{font-family:Fraunces;font-size:clamp(38px,5vw,64px);line-height:1.08;letter-spacing:-2px}
+.statement em{color:var(--orange)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:45px}
+.stat{padding:25px 20px;background:white;border-radius:20px;border:1px solid var(--line)}
+.stat strong{font-family:Fraunces;font-size:43px;display:block}.stat span{font-size:11px;color:var(--muted)}
+.future{background:var(--ink);color:white;position:relative;overflow:hidden}
+.future:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:var(--orange);filter:blur(120px);opacity:.13;right:-250px;top:-200px}
+.future .eyebrow{color:var(--sun)}
+.future-head{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:end;position:relative}
+.future .lead{color:rgba(255,255,255,.6)}
+.venture-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:65px;position:relative}
+.venture{height:240px;border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;transition:.3s;background:rgba(255,255,255,.035)}
+.venture:hover{transform:translateY(-8px);background:var(--sun);color:var(--ink);border-color:var(--sun)}
+.venture .icon{font-size:30px}.venture h4{font-family:Fraunces;font-size:26px}.venture p{font-size:12px;line-height:1.6;opacity:.6}
+.manifesto{background:var(--orange);color:var(--ink);padding:110px 0}
+.manifesto .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:80px}
+.manifesto .eyebrow{color:var(--ink)}
+.manifesto blockquote{font-family:Fraunces;font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-3px}
+.manifesto blockquote em{color:var(--cream)}
+.cta{padding:120px 0;text-align:center;position:relative;overflow:hidden}
+.cta h2{font-family:Fraunces;font-size:clamp(55px,8vw,105px);line-height:.9;letter-spacing:-5px;max-width:950px;margin:auto}
+.cta h2 em{color:var(--orange)}
+.cta p{max-width:600px;margin:28px auto 35px;color:var(--muted);line-height:1.7}
+footer{background:var(--ink);color:white;padding:70px 0 30px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:70px;padding-bottom:55px}
+.footer-logo{font-family:Fraunces;font-size:32px}.footer-logo span{color:var(--sun)}
+footer p{color:rgba(255,255,255,.5);line-height:1.7;font-size:13px;max-width:390px;margin-top:16px}
+footer h5{font-family:"Spline Sans Mono";color:var(--sun);font-size:9px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+footer a{display:block;font-size:13px;color:rgba(255,255,255,.67);margin:12px 0}footer a:hover{color:var(--sun)}
+.bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:25px;display:flex;justify-content:space-between;color:rgba(255,255,255,.35);font-size:10px}
+.reveal{opacity:0;transform:translateY(35px);transition:.75s ease}.reveal.show{opacity:1;transform:none}
+.cursor-glow{position:fixed;width:300px;height:300px;border-radius:50%;background:rgba(243,200,91,.12);filter:blur(60px);pointer-events:none;z-index:0;transform:translate(-50%,-50%)}
+@media(max-width:900px){
+ .links{position:fixed;top:94px;left:20px;right:20px;background:var(--cream);border:1px solid var(--line);border-radius:22px;padding:25px;display:flex;flex-direction:column;align-items:flex-start;opacity:0;visibility:hidden;transform:translateY(-10px);transition:.25s;box-shadow:0 20px 50px rgba(12,31,28,.12)}
+ .links.open{opacity:1;visibility:visible;transform:none}.menu{display:block}
+ .hero-grid,.about-grid,.future-head,.manifesto .wrap{grid-template-columns:1fr}
+ .hero-art{height:430px;max-width:500px;margin:auto;width:100%}
+ .card{grid-template-columns:1fr;padding-top:70px}.venture-grid{grid-template-columns:1fr 1fr}
+ .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 30px)}nav{top:10px}.navbar{height:62px;padding-left:12px}.brand{font-size:14px}.brand small{font-size:7px}.mark{width:36px;height:36px}
+ .hero{padding-top:120px;min-height:auto}.hero-grid{gap:35px}h1{font-size:62px;letter-spacing:-3px}.hero p{font-size:15px}
+ .actions{flex-direction:column}.btn{width:100%;justify-content:center}.hero-art{height:390px;transform:scale(.9);transform-origin:center top}
+ .t1{width:225px;height:250px}.t2{width:205px;height:205px}.t3{width:240px;height:170px;left:65px}
+ .section{padding:85px 0}.title{letter-spacing:-2px}.cards{margin-top:40px}.card{min-height:360px;padding:65px 25px 25px}
+ .stats{grid-template-columns:1fr}.venture-grid{grid-template-columns:1fr}.venture{height:190px}
+ .manifesto{padding:80px 0}.manifesto .wrap{gap:30px}.footer-grid{grid-template-columns:1fr;gap:35px}.bottom{flex-direction:column;gap:10px}
+ .cursor-glow{display:none}
+}
+</style>
+</head>
+<body>
+<div class="noise"></div><div class="cursor-glow" id="glow"></div>
+<nav id="nav"><div class="wrap navbar">
+<a class="brand" href="#home"><span class="mark">E</span><span>ELEPTA HOLDINGS<small>BUILDING WHAT'S NEXT</small></span></a>
+<div class="links" id="links"><a href="#about">About</a><a href="#portfolio">Companies</a><a href="#future">Future</a><a class="navcta" href="#portfolio">Explore the Group</a></div>
+<button class="menu" id="menu" aria-label="Menu">☰</button>
+</div></nav>
+
+<header class="hero" id="home">
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="wrap hero-grid">
+<div>
+<div class="kicker"><i></i> A growing family of businesses</div>
+<h1>We build<br><em>what's next.</em></h1>
+<p>Elepta Holdings brings together ambitious businesses across company formation, international consulting, education and the ventures still waiting to be built.</p>
+<div class="actions"><a class="btn dark" href="#portfolio">Meet the Elepta Group <span>→</span></a><a class="btn light" href="#future">See what's next ↓</a></div>
+</div>
+<div class="hero-art" aria-label="Elepta companies">
+<div class="tile t1"><div class="top">Parent Company</div><h3>One vision.<br>Many directions.</h3><div class="big">E</div></div>
+<div class="tile t2"><div class="top">Today</div><h3>3 growing<br>brands.</h3><p style="position:absolute;bottom:25px;font-size:12px;margin:0;color:var(--ink)">FORMATIONS · CONSULTING · EDU</p></div>
+<div class="tile t3"><div class="top">Tomorrow</div><h3>More possibilities.</h3><span>↗</span></div>
+</div>
+</div>
+</header>
+
+<div class="marquee"><div class="track">
+<span>ELEPTA FORMATIONS</span><b>✦</b><span>ELEPTA CONSULTING</span><b>✦</b><span>ELEPTA EDU</span><b>✦</b><span>FUTURE VENTURES</span><b>✦</b>
+<span>ELEPTA FORMATIONS</span><b>✦</b><span>ELEPTA CONSULTING</span><b>✦</b><span>ELEPTA EDU</span><b>✦</b><span>FUTURE VENTURES</span><b>✦</b>
+</div></div>
+
+<section class="section portfolio" id="portfolio"><div class="wrap">
+<div class="reveal"><div class="eyebrow">Our portfolio</div><h2 class="title">Different businesses.<br>One Elepta.</h2><p class="lead">Each company has its own focus, audience and ambition — connected by a shared drive to make opportunities more accessible.</p></div>
+<div class="cards">
+<article class="card reveal"><span class="card-no">01 / BUSINESS</span><h3>Elepta<br>Formations</h3><p>Helping entrepreneurs establish businesses internationally with company formation and setup support across global markets.</p><div class="card-actions"><a class="pill" href="https://elepta.com/" target="_blank" rel="noopener">Visit elepta.com ↗</a><a class="pill" href="https://www.instagram.com/elepta_com" target="_blank" rel="noopener">Instagram ↗</a></div></article>
+<article class="card reveal"><span class="card-no">02 / GERMANY</span><h3>Elepta<br>Consulting</h3><p>Germany-focused support for international students, professionals and families exploring education, career and relocation opportunities.</p><div class="card-actions"><a class="pill" href="https://eleptaconsulting.com/" target="_blank" rel="noopener">Visit website ↗</a><a class="pill" href="https://www.instagram.com/elepta_consulting" target="_blank" rel="noopener">Instagram ↗</a></div></article>
+<article class="card reveal"><span class="card-no">03 / LEARNING</span><h3>Elepta<br>Edu</h3><p>Learning support for ambitious students, including dedicated IELTS preparation and German language pathways from beginner level through B2.</p><div class="card-actions"><a class="pill" href="https://eleptaedu.com/" target="_blank" rel="noopener">Visit eleptaedu.com ↗</a><a class="pill" href="https://www.instagram.com/elepta_edu" target="_blank" rel="noopener">Instagram ↗</a></div></article>
+</div>
+</div></section>
+
+<section class="section about" id="about"><div class="wrap about-grid">
+<div class="reveal"><div class="eyebrow">Why Elepta Holdings?</div><h2 class="statement">Because our ambition was never to build <em>just one</em> company.</h2></div>
+<div class="reveal"><p class="lead" style="margin-top:0">Elepta Holdings is the umbrella for businesses built around real opportunities. We create focused brands that can stand on their own while benefiting from a shared identity, entrepreneurial mindset and long-term vision.</p>
+<p class="lead">Today that means business formation, Germany-focused consulting and education. Tomorrow, Elepta can move into entirely new sectors.</p>
+<div class="stats"><div class="stat"><strong data-count="3">0</strong><span>Current Elepta brands</span></div><div class="stat"><strong>1</strong><span>Shared group vision</span></div><div class="stat"><strong>∞</strong><span>Room to build next</span></div></div>
+</div>
+</div></section>
+
+<section class="section future" id="future"><div class="wrap">
+<div class="future-head reveal"><div><div class="eyebrow">The next chapter</div><h2 class="title">The portfolio isn't finished.</h2></div><p class="lead">Elepta is designed to evolve. New markets, industries and ideas can become the next chapter of the group when the right opportunity arrives.</p></div>
+<div class="venture-grid">
+<div class="venture reveal"><div class="icon">↗</div><div><h4>Logistics</h4><p>A potential future direction connecting people, goods and markets.</p></div></div>
+<div class="venture reveal"><div class="icon">⌁</div><div><h4>Technology</h4><p>Digital products and services built around useful real-world problems.</p></div></div>
+<div class="venture reveal"><div class="icon">◎</div><div><h4>Trade</h4><p>Exploring cross-border commercial opportunities and new markets.</p></div></div>
+<div class="venture reveal"><div class="icon">＋</div><div><h4>Something New</h4><p>The next Elepta company may be in a sector we haven't entered yet.</p></div></div>
+</div>
+</div></section>
+
+<section class="manifesto"><div class="wrap">
+<div class="reveal"><div class="eyebrow">Our mindset</div><p style="font-size:14px;line-height:1.7;max-width:280px">We don't need every future business to look the same. We need every one to have a reason to exist.</p></div>
+<blockquote class="reveal">Build with purpose.<br>Move with <em>ambition.</em><br>Keep creating.</blockquote>
+</div></section>
+
+<section class="cta"><div class="wrap reveal"><div class="eyebrow">Elepta Holdings</div><h2>Three brands.<br><em>Just the beginning.</em></h2><p>Explore the businesses already under the Elepta umbrella and follow the journey as the group continues to grow.</p><a class="btn dark" href="#portfolio">Explore our companies →</a></div></section>
+
+<footer><div class="wrap">
+<div class="footer-grid">
+<div><div class="footer-logo">ELEPTA <span>HOLDINGS</span></div><p>A growing group of independent businesses connected by one ambition: building useful companies and creating new possibilities.</p></div>
+<div><h5>Companies</h5><a href="https://elepta.com/" target="_blank">Elepta Formations ↗</a><a href="https://eleptaconsulting.com/" target="_blank">Elepta Consulting ↗</a><a href="https://eleptaedu.com/" target="_blank">Elepta Edu ↗</a></div>
+<div><h5>Instagram</h5><a href="https://www.instagram.com/elepta_com" target="_blank">@elepta_com ↗</a><a href="https://www.instagram.com/elepta_consulting" target="_blank">@elepta_consulting ↗</a><a href="https://www.instagram.com/elepta_edu" target="_blank">@elepta_edu ↗</a></div>
+</div>
+<div class="bottom"><span>© <span id="year"></span> Elepta Holdings. All rights reserved.</span><span>One Group. Multiple Possibilities.</span></div>
+</div></footer>
+
+<script>
+const nav=document.getElementById('nav'),menu=document.getElementById('menu'),links=document.getElementById('links');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));
+menu.onclick=()=>{links.classList.toggle('open');menu.textContent=links.classList.contains('open')?'×':'☰'};
+document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>{links.classList.remove('open');menu.textContent='☰'});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const stat=document.querySelector('[data-count]');
+let counted=false;
+const sio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&!counted){counted=true;let n=0;const t=setInterval(()=>{n++;stat.textContent=n;if(n>=3)clearInterval(t)},220)}}));
+sio.observe(stat);
+document.getElementById('year').textContent=new Date().getFullYear();
+const glow=document.getElementById('glow');
+window.addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+</script>
+</body>
+</html>
